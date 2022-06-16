@@ -1,0 +1,28 @@
+    <mat-card class="cd">
+        <mat-form-field appearance="outline">
+            <mat-label>Enter your name</mat-label>
+            <input matInput placeholder="Enter your name" [(ngModel)]="student.name">
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter your class</mat-label>
+            <input matInput placeholder="Enter your class" [(ngModel)]="student.cls">
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter your phone number</mat-label>
+            <input matInput placeholder="Enter your phone number" [(ngModel)]="student.phone">
+        </mat-form-field>
+        <br>
+        <br>
+        <!--<button mat-raised-button color="primary" (click)="update.emit(student)" routerLink="detailstable">Submit</button>-->
+        <button mat-raised-button color="primary" (click)="updateform(student)">submit</button>
+        <button mat-raised-button color="primary" (click)="addNewStudent()" style="margin-left: 20px;">Add new student</button>
+        <button mat-raised-button color="primary" (click)="home()" style="margin-left: 20px;">Back</button>
+        <button mat-raised-button color="primary" routerLink="/detailstable" style="margin-left: 20px;">Go to details</button>
+        <br>
+        <br>
+    </mat-card>
+
